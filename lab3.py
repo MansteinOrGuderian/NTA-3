@@ -48,7 +48,7 @@ def find_smooth_linear_equation(generator_alpha, mod_number, factor_base):
 
 def create_system_of_linear_equations(alpha, mod_number, factor_base):
     size_of_factor_base = len(factor_base)
-    num_equations = size_of_factor_base + 10 # put in reserve a little bit more equation, to solve certainly 
+    num_equations = size_of_factor_base + 15 # put in reserve a little bit more equation, to solve certainly 
     equations = []
     for _ in range(num_equations):
         equation = find_smooth_linear_equation(alpha, mod_number, factor_base)
